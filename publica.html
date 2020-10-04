@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Desafio Publica Tecnologia</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="desafio.css">
+	</head>
+
+	<body>
+		
+		<header>
+			<P class="texto-maria">Pontuação de Maria</P>
+		</header>
+		
+		<main>
+			
+			<p class="texto-tbl">Tabela de Pontos</p>
+			
+			<table class="container">
+				<thead>
+					<tr>
+						<th>Jogo</th>
+						<th>Placar</th>
+						<th>Mínimo da Temporada</th>
+						<th>Máximo da Temporada</th>
+						<th>Quebra Recorde Min.</th>
+						<th>Quebra Recorde Max.</th>
+					</tr>
+				</thead>
+				<tbody id="tabela-jogo">
+					<tr class="jogos" id="primeiro-jogo">
+						<td class="info-jogo">1</td>
+						<td class="info-placar">12</td>
+						<td class="info-min-temporada"></td>
+						<td class="info-max-temporada">12</td>
+						<td class="info-recorde-min">0</td>
+						<td class="info-recorde-max">0</td>
+					</tr>
+
+					<tr class="jogos">
+						<td class="info-jogo">2</td>
+						<td class="info-placar">24</td>
+						<td class="info-min-temporada">12</td>
+						<td class="info-max-temporada">24</td>
+						<td class="info-recorde-min">0</td>
+						<td class="info-recorde-max">1</td>
+					</tr>
+
+					<tr class="jogos">
+						<td class="info-jogo">3</td>
+						<td class="info-placar">10</td>
+						<td class="info-min-temporada">10</td>
+						<td class="info-max-temporada">24</td>
+						<td class="info-recorde-min">1</td>
+						<td class="info-recorde-max">1</td>
+					</tr>
+
+					<tr class="jogos">
+						<td class="info-jogo">4</td>
+						<td class="info-placar">24</td>
+						<td class="info-min-temporada">10</td>
+						<td class="info-max-temporada">24</td>
+						<td class="info-recorde-min">1</td>
+						<td class="info-recorde-max">1</td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
+
+		<section class="container">
+		    <h2 id="titulo-form">Adicionar novo jogo</h2>
+		    <form id="form-adiciona">
+		        <div class="grupo">
+		            <label for="jogo">Jogo:</label>
+		            <input id="jogo" name="jogo" type="text" placeholder="digite o jogo disputado" class="campo">  
+		            <!--placeholder colocar a frase que vai ficar dentro do ccampo-->
+		        </div>
+		        <div class="grupo">
+		            <label for="placar">Placar:</label>
+		            <input id="placar" name="placar" type="text" placeholder="digite o placar do jogo" class="campo campo-medio">
+		        </div>
+		        <button id="adicionar-jogo" class="botao bto-principal">Adicionar</button>
+		    </form>
+		</section>
+
+	</body>
+
+	<footer>
+			<p class="texto-footer">&copy; | Produzido por | Gustavo | 2020 |</p>
+	</footer>
+
+	<script src="publica-principal.js"></script>
+</html>
+
